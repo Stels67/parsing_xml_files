@@ -1,5 +1,4 @@
 ﻿using OfficeOpenXml;
-using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -17,8 +16,12 @@ namespace parsing_xml_files
         {
             List<PersonModel> output = new()
             {
-                new() { }
-            }
+                new() { FirstName = "Василий", Surname = "Васильев", PhoneNumber = "+79254898547", Email = "майл пользователя", PassportNumber = "45484547512" },
+                new() { FirstName = "Василий", Surname = "Васильев", PhoneNumber = "+79254898547", Email = "майл пользователя", PassportNumber = "45484547512" },
+                new() { FirstName = "Василий", Surname = "Васильев", PhoneNumber = "+79254898547", Email = "майл пользователя", PassportNumber = "45484547512" }
+            };
+
+            return output;
         }
     }
 }
